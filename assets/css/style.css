@@ -48,17 +48,26 @@ a {
 }
 
 /* Header */
-
-.header {
+.fixed-header {
+    background: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
     background: #e6f0ff;
     height: 100vh;
     position: relative;
+  
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 3.8rem;
+    padding: 12px 0;
 }
 
 .navbar ul {
@@ -583,7 +592,6 @@ a {
 }
 .footer .row-01 .info .social {
     display: flex;
-    justify-content: space-between;
     width: 117px;
 }
 .footer .row-01 .social-link {
@@ -592,7 +600,14 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #f2f2f4;
+    border-radius: 3px;
 }
+
+.footer .row-01 .social-link + .social-link {
+    margin-left: 16px;
+}
+
 .footer .row-01 .social-link:hover {
     background: #e4e5e8;
     border-radius: 3px;
